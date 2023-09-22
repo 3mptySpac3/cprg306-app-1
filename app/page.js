@@ -14,7 +14,7 @@ export default function Page() {
         <p>Name: Jean-Pierre Nde-Forgwang</p>
         <p>Course Section: CPRG 306 A</p>
         <p>
-          <a href="https://github.com/">GitHub</a>
+          <Link href="https://github.com/">GitHub</Link> 
         </p>
       </div>
 
