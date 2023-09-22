@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './Navbar';
 import Link from 'next/link';
 
 
@@ -16,9 +16,6 @@ export default function Page() {
         <p>
           <a href="https://github.com/">GitHub</a>
         </p>
-        < Link href="/week2">Week II</Link>
-        < Link href="/week3">Week III</Link>
-        < Link href="/week4">Week IV</Link>
       </div>
 
       </main>
