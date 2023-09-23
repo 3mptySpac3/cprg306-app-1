@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-center items-center h-full">
         <div style= {{fontFamily: "cursive"}} className="space-x-10">
           <CustomLink href="/">Home</CustomLink>
-          <CustomLink href="/week2">Week-II</CustomLink>
+          <CustomLink target="_blank" href="/week2">Week-II</CustomLink>
           <CustomLink href="/week3">Week-III</CustomLink>
           <CustomLink href="/week4">Week-IV</CustomLink>
           <CustomLink href="/week5">Week-V</CustomLink>
@@ -21,9 +21,9 @@ export default function Navbar() {
   )
 }
 
-function CustomLink({ href, children }) {
+function CustomLink({ href, children, }) {
   return (
-    <Link href={href}>
+    <Link href={href} passHref>
       <span className="cursor-pointer p-2 my-2 bg-black hover:bg-gray-500 transition-colors duration-200 rounded">
         {children}
       </span>
