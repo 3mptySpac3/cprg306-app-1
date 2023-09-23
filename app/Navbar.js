@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-black text-white h-16 mt-1 mb-1 p-10 border-2 border-white rounded hover:shadow-xl transition-shadow duration-300">
       <div className="container mx-auto flex justify-center items-center h-full">
-        <div className="space-x-10">
+        <div style= {{fontFamily: "cursive"}} className="space-x-10">
           <CustomLink href="/">Home</CustomLink>
           <CustomLink href="/week2">Week-II</CustomLink>
           <CustomLink href="/week3">Week-III</CustomLink>
