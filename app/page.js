@@ -17,7 +17,7 @@ export default function Page() {
             <Link href="https://github.com/">GitHub</Link> 
           </p>
         </div>
-        </div>
+      </div>
 
       </main>
     
