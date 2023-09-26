@@ -2,13 +2,14 @@ import React from 'react';
 import Navbar from '../Navbar';
 import Link from 'next/link';
 import ItemKart from '../comps/shoppingkart';
+import GridStyle from '../comps/shopgrid';
 
 export default function Week3() {
   return (
     <div>
       <div><Navbar /></div>
 
-      <div className="grid-container mt-36 hover:cursor-pointer">
+      <GridStyle>
         <ItemKart name="Milk" />
         <ItemKart name="Eggs" />
         <ItemKart name="Bread" />
@@ -21,8 +22,8 @@ export default function Week3() {
         <ItemKart name="Paper Towel" />
         <ItemKart name="Hand Soap" />
         <ItemKart name="Dish Soap" />
+      </GridStyle>
 
-      </div>
     </div>
    
   )
