@@ -10,7 +10,7 @@ export default function Week3() {
       <div><Navbar /></div>
 
       <GridStyle>
-        <ItemKart name="Milk" href="/milk" />
+        <ItemKart name="Milk" href="/week3/milk" />
         <ItemKart name="Eggs" href=""/>
         <ItemKart name="Bread" href=""/>
         <ItemKart name="Banana" href=""/>
