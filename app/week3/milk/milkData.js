@@ -2,7 +2,7 @@ import React from "react";
 
 const MilkData = [
   {
-    name: "Dairy Milk, 🥛",
+    name: "Dairy Milk, 🐮",
     quantity: "10",
     category: "Dairy",
     price: "$100.00",
