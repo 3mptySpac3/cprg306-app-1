@@ -1,9 +1,11 @@
-
+import React from 'react';
+import Navbar from '../../Navbar';
+import Link from 'next/link';
 
 export default function Week11() {
   return (
-    <p>
-      god help me
-    </p>
+    <div>
+      <Navbar />
+    </div>
   )
 }
