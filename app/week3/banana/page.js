@@ -1,3 +1,0 @@
-function milk() {
-  return 'milk'
-}

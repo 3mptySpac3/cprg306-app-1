@@ -11,17 +11,17 @@ export default function Week3() {
 
       <GridStyle>
         <ItemKart name="Milk" href="/week3/milk" />
-        <ItemKart name="Eggs" href=""/>
-        <ItemKart name="Bread" href=""/>
-        <ItemKart name="Banana" href=""/>
-        <ItemKart name="Broccoli" href=""/>
-        <ItemKart name="Chicken Breast" href=""/>
-        <ItemKart name="Pasta Sauce" href=""/>
-        <ItemKart name="Spaghetti" href=""/>
-        <ItemKart name="Toilet Paper" href=""/>
-        <ItemKart name="Paper Towel" href=""/>
-        <ItemKart name="Hand Soap" href=""/>
-        <ItemKart name="Dish Soap" href=""/>
+        <ItemKart name="Eggs" />
+        <ItemKart name="Bread" />
+        <ItemKart name="Banana" />
+        <ItemKart name="Broccoli" />
+        <ItemKart name="Chicken Breast" />
+        <ItemKart name="Pasta Sauce" />
+        <ItemKart name="Spaghetti" />
+        <ItemKart name="Toilet Paper" />
+        <ItemKart name="Paper Towel" />
+        <ItemKart name="Hand Soap" />
+        <ItemKart name="Dish Soap" />
       </GridStyle>
 
     </div>
