@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import MilkData from './milkData';
 import MilkItems from './milkItems';
 import ShopTitles from '/app/comps/shoptitles';

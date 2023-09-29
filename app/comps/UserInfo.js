@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import React from 'react';
-import PopUp from './PopUp';
 
 function UserInfo() {
   return (

@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from '../Navbar';
-import Link from 'next/link';
 import UserInfo from '../comps/UserInfo';
 
 export default function Week2() {

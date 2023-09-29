@@ -18,6 +18,7 @@ export default function Navbar() {
             <li><CustomLink href="/week4.11/week7">Week-VII</CustomLink></li>
             <li><CustomLink href="/week4.11/week8">Week-VIII</CustomLink></li>
             <li><CustomLink href="/week4.11/week10">Week-X</CustomLink></li>
+            <li><CustomLink href="/week4.11/week11">Week-XI</CustomLink></li>
           </ul>
         </div>
       </div>

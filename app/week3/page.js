@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from '../Navbar';
-import Link from 'next/link';
 import ItemKart from '../comps/shoppingkart';
 import GridStyle from '../comps/shopgrid';
 
