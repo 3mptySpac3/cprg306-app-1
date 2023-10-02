@@ -1,6 +1,6 @@
-import React from 'react';
+import react from 'react';
 
-function MilkItems({name, quantity,category,price}){
+function PtItems({name, quantity,category,price}){
   return(
     <li className="border p-4 mb-4 ml-4 mr-4">
       <h4 className="font-bold">{name}</h4>
@@ -9,8 +9,6 @@ function MilkItems({name, quantity,category,price}){
       <p>Price: {price}</p>
     </li>
     );
-}
+} 
 
-export default MilkItems;
-
-
+export default PtItems;
