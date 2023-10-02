@@ -7,10 +7,10 @@ export default function Week2() {
     <div>
       <Navbar />
       <div className="flex justify-between items-center">
-        <div className="mt-24 ml-36">
+        <div className="mt-4 ml-36">
           <h1 className='text-4xl m-2 '>My Shopping List</h1>
         </div>
-        <div className=" mr-12 mt-24">
+        <div className=" mr-12 mt-4">
           <UserInfo />
         </div>
       </div>

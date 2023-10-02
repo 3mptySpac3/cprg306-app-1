@@ -7,7 +7,7 @@ export default function Page() {
   return (
       <main>
       <Navbar />
-      <div className = "mt-24">
+      <div className = "mt-4">
         <h1 className = 'text-4xl m-2 ml-36'>CPRG 306: Web Development 2 - Assignments</h1>
 
         <div style= {{fontFamily: "cursive"}}className = 'ml-36'>

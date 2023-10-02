@@ -4,7 +4,7 @@ import React from 'react';
 
 function GridStyle({children}){
   return(
-    <div className="grid grid-cols-4 gap-6 mt-36 hover:cursor-pointer p-4">
+    <div className="grid grid-cols-4 gap-6 mt-4 hover:cursor-pointer p-4">
       {children}
     </div>
   );

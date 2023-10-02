@@ -5,7 +5,7 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-1 left-2 right-2 h-16 mt-1 mb-1 p-10 border-2 hover:text-black ">
+    <nav className="h-16 ml-4 mr-4 mt-4 p-10 border-2 hover:text-black ">
       <div className="container mx-auto flex justify-center items-center h-full">
         <div className=""style= {{fontFamily: "cursive"}}>
           <ul className= "flex space-x-2 hover:">
