@@ -8,10 +8,7 @@ export default function Week3() {
   return (
     <div>
       <div><Navbar /></div>
-
-        <div className="text-4xl ml-36 mt-4 m-2 mb-0" style= {{fontFamily: "cursive"}}>D'Shop</div>
-
-
+      <div className="text-4xl ml-36 mt-4 m-2 mb-0" style= {{fontFamily: "cursive"}}>D'Shop</div>
       <GridStyle>
         <ItemKart name="Milk" href="/week3/Dshop/milk" />
         <ItemKart name="Eggs" href="/week3/Dshop/egg"/>
@@ -29,5 +26,5 @@ export default function Week3() {
 
     </div>
    
-  )
+  );
 }
