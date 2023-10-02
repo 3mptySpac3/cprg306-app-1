@@ -9,18 +9,18 @@ export default function Week3() {
       <div><Navbar /></div>
 
       <GridStyle>
-        <ItemKart name="Milk" href="/week3/milk" />
-        <ItemKart name="Eggs" href="/week3/egg"/>
-        <ItemKart name="Bread" href="/week3/bread"/>
-        <ItemKart name="Banana" href="/week3/banana"/>
-        <ItemKart name="Broccoli" href="/week3/broccoli"/>
-        <ItemKart name="Chicken" href="/week3/chicken"/>
-        <ItemKart name="Sauce" href="/week3/sauce"/>
-        <ItemKart name="Spaghetti" href="/week3/spaghetti"/>
-        <ItemKart name="Toilet Paper" href="/week3/toiletpaper"/>
-        <ItemKart name="Paper Towel" href="/week3/papertowel"/>
-        <ItemKart name="Hand Soap" href="/week3/handsoap"/>
-        <ItemKart name="Dish Soap" href="/week3/dishsoap"/>
+        <ItemKart name="Milk" href="/week3/Dshop/milk" />
+        <ItemKart name="Eggs" href="/week3/Dshop/egg"/>
+        <ItemKart name="Bread" href="/week3/Dshop/bread"/>
+        <ItemKart name="Banana" href="/week3/Dshop/banana"/>
+        <ItemKart name="Broccoli" href="/week3/Dshop/broccoli"/>
+        <ItemKart name="Chicken" href="/week3/Dshop/chicken"/>
+        <ItemKart name="Sauce" href="/week3/Dshop/sauce"/>
+        <ItemKart name="Spaghetti" href="/week3/Dshop/spaghetti"/>
+        <ItemKart name="Toilet Paper" href="/week3/Dshop/toiletpaper"/>
+        <ItemKart name="Paper Towel" href="/week3/Dshop/papertowel"/>
+        <ItemKart name="Hand Soap" href="/week3/Dshop/handsoap"/>
+        <ItemKart name="Dish Soap" href="/week3/Dshop/dishsoap"/>
       </GridStyle>
 
     </div>
