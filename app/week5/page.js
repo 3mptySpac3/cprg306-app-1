@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from '../../Navbar';
+import Navbar from '../Navbar';
 
-export default function Week11() {
+export default function Week5() {
   return (
     <div>
       <Navbar />
