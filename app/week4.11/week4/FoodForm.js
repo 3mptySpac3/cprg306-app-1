@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState } from 'react';
@@ -60,7 +59,7 @@ const handleSubmit = (event) => {
 
 return (
   <div className="relative p-6 max-w-md mx-auto bg-cyan-400 rounded-md mt-8">
-   { <h1 className="text-2xl mb-4">D' Greatest Food Q&A</h1>}
+   { <h1 className="text-2xl mb-4">D&apos; Greatest Food Q&A</h1>}
 
     <form onSubmit={handleSubmit} className="overflow-y-auto max-h-[300px]">
       <label className="block mb-2">
@@ -109,11 +108,11 @@ return (
           onChange={handleChange}
           className="w-full p-2 border rounded mt-1 text-black">
           <option value="" disabled>Select an option</option>
-          <option value="Very satisfied">God's gift to earth</option>
+          <option value="Very satisfied">God&apos;s gift to earth</option>
           <option value="Satisfied">Aight!</option>
           <option value="Neutral">Neutral</option>
           <option value="Dissatisfied">Dissatisfied</option>
-          <option value="Very dissatisfied">I'd rather die!</option>
+          <option value="Very dissatisfied">I&apos;d rather die!</option>
         </select>
         {errors.satisfaction && <p className="text-red-400 bg-gray-700 m-2 border rounded justify-center flex ">{errors.satisfaction}</p>}
       </label>
