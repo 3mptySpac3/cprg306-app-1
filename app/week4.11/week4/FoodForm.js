@@ -60,7 +60,7 @@ const handleSubmit = (event) => {
 
 return (
   <div className="relative p-6 max-w-md mx-auto bg-cyan-400 rounded-md mt-8">
-    <h1 className="text-2xl mb-4">D' Greatest Food Q&A</h1>
+   { <h1 className="text-2xl mb-4">D' Greatest Food Q&A</h1>}
 
     <form onSubmit={handleSubmit} className="overflow-y-auto max-h-[300px]">
       <label className="block mb-2">
