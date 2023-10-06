@@ -9,5 +9,5 @@ export default function Week4() {
       <Navbar />
       <FoodForm />
     </div>
-  )
-}
+  );
+};

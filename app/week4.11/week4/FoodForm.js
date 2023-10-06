@@ -1,5 +1,4 @@
 
-
 "use client"
 
 import React, { useState } from 'react';
@@ -25,7 +24,6 @@ const [errors, setErrors] = useState({
 const handleChange = (event) => {
   const { name, value } = event.target;
   setFormData({ ...formData, [name]: value });
-  console.log("change formData",{...formData, [name]: value});
 };
 
 const handleSubmit = (event) => {
@@ -58,7 +56,6 @@ const handleSubmit = (event) => {
     satisfaction: '',
     favoriteCategory: '',
   });
-  console.log("submit formData",{...formData});
 };
 
 return (
