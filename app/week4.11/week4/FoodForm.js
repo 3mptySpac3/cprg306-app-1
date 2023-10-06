@@ -25,6 +25,7 @@ const [errors, setErrors] = useState({
 const handleChange = (event) => {
   const { name, value } = event.target;
   setFormData({ ...formData, [name]: value });
+  console.log("change formData",{...formData, [name]: value});
 };
 
 const handleSubmit = (event) => {
@@ -48,7 +49,7 @@ const handleSubmit = (event) => {
 
   if (Object.values(fillErrors).some((error) => error !== '')) return;
   
-  alert("Thank you " + formData.firstName + " " + formData.lastName + " for your submission! \nSeems like you are " + formData.age + ". DAMN! \nYour Preferences:\nSatisfaction: " + formData.satisfaction + "\nFavorite Food: " + formData.favoriteCategory + + JSON.stringify( null, 2));
+  alert("Thank you " + formData.firstName + " " + formData.lastName + " for your submission! \nSeems like you are " + formData.age + ". DAMN! \nYour Preferences:\nSatisfaction: " + formData.satisfaction + "\nFavorite Food: " + formData.favoriteCategory);
 
   setFormData({
     firstName: '',
@@ -57,6 +58,7 @@ const handleSubmit = (event) => {
     satisfaction: '',
     favoriteCategory: '',
   });
+  console.log("submit formData",{...formData});
 };
 
 return (
