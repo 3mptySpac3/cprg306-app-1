@@ -41,14 +41,22 @@ const handleSubmit = (event) => {
   if (!formData.firstName) fillErrors.firstName = 'I need your government name❗';
   if (!formData.lastName) fillErrors.lastName = 'I need your government name❗';
   if (!formData.age) fillErrors.age = 'Stop lying❗';
-  if (!formData.satisfaction) fillErrors.satisfaction = 'You must be satisfied❗';
+  if (!formData.satisfaction) fillErrors.satisfaction = 'This is not a joke';
   if (!formData.favoriteCategory) fillErrors.favoriteCategory = 'You must be stupid❗';
 
   setErrors(fillErrors);
 
   if (Object.values(fillErrors).some((error) => error !== '')) return;
   
-  alert("Thank you " + formData.firstName + " " + formData.lastName + " for your submission!" + "\n Seems like you are " + formData.age + ". DAMN! \nYour Preferences:\n" + JSON.stringify(formData, null, 2));
+  alert("Thank you " + formData.firstName + " " + formData.lastName + " for your submission! \nSeems like you are " + formData.age + ". DAMN! \nYour Preferences:\nSatisfaction: " + formData.satisfaction + "\nFavorite Food: " + formData.favoriteCategory + + JSON.stringify( null, 2));
+
+  setFormData({
+    firstName: '',
+    lastName: '',
+    age: '',
+    satisfaction: '',
+    favoriteCategory: '',
+  });
 };
 
 return (
@@ -83,12 +91,14 @@ return (
       <label className="block mb-2">
         Age:
         <input
-          type="text"
+          type="number"
           name="age"
           value={formData.age}
           onChange={handleChange}
           className="w-full p-2 border rounded mt-1 text-black"
           placeholder='100'
+          min="1"
+          max="120"
         />
         {errors.age && <p className="text-red-400 bg-gray-700 m-2 border rounded justify-center flex ">{errors.age}</p>}
       </label>
@@ -100,11 +110,11 @@ return (
           onChange={handleChange}
           className="w-full p-2 border rounded mt-1 text-black">
           <option value="" disabled>Select an option</option>
-          <option value="very satisfied">God's gift to earth</option>
-          <option value="satisfied">Aight!</option>
-          <option value="neutral">Neutral</option>
-          <option value="dissatisfied">Dissatisfied</option>
-          <option value="very dissatisfied">I'd rather die!</option>
+          <option value="Very satisfied">God's gift to earth</option>
+          <option value="Satisfied">Aight!</option>
+          <option value="Neutral">Neutral</option>
+          <option value="Dissatisfied">Dissatisfied</option>
+          <option value="Very dissatisfied">I'd rather die!</option>
         </select>
         {errors.satisfaction && <p className="text-red-400 bg-gray-700 m-2 border rounded justify-center flex ">{errors.satisfaction}</p>}
       </label>
@@ -116,14 +126,14 @@ return (
           onChange={handleChange}
           className="w-full p-2 border rounded mt-1 text-black">
           <option value="" disabled>Category</option>
-          <option value="fruits">Fruits</option>
-          <option value="vegetables">Vegetables</option>
-          <option value="meat">Meat</option>
-          <option value="dairy">Dairy</option>
-          <option value="grains">Grains</option>
-          <option value="nuts">Snacks</option>
-          <option value="drinks">Bevies</option>
-          <option value="other">Other</option>
+          <option value="Fruits">Fruits</option>
+          <option value="Vegetables">Vegetables</option>
+          <option value="Meat">Meat</option>
+          <option value="Dairy">Dairy</option>
+          <option value="Grains">Grains</option>
+          <option value="Nuts">Snacks</option>
+          <option value="Drinks">Bevies</option>
+          <option value="Other">Other</option>
         </select>
         {errors.favoriteCategory && <p className="text-red-400 bg-gray-700 m-2 border rounded justify-center flex ">{errors.favoriteCategory}</p>}
       </label>
