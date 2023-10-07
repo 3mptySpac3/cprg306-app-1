@@ -12,13 +12,13 @@ export default function Navbar() {
             <li><CustomLink href="/">Home</CustomLink></li>
             <li><CustomLink href="/week2">Week-II</CustomLink></li>
             <li><CustomLink href="/week3">Week-III</CustomLink></li>
-            <li><CustomLink href="/week4.11/week4">Week-IV</CustomLink></li>
-            <li><CustomLink href="/week4.11/week5">Week-V</CustomLink></li>
-            <li><CustomLink href="/week4.11/week6">Week-VI</CustomLink></li>
-            <li><CustomLink href="/week4.11/week7">Week-VII</CustomLink></li>
-            <li><CustomLink href="/week4.11/week8">Week-VIII</CustomLink></li>
-            <li><CustomLink href="/week4.11/week10">Week-X</CustomLink></li>
-            <li><CustomLink href="/week4.11/week11">Week-XI</CustomLink></li>
+            <li><CustomLink href="/week4">Week-IV</CustomLink></li>
+            <li><CustomLink href="/week5">Week-V</CustomLink></li>
+            <li><CustomLink href="/week6">Week-VI</CustomLink></li>
+            <li><CustomLink href="/week7">Week-VII</CustomLink></li>
+            <li><CustomLink href="/week8">Week-VIII</CustomLink></li>
+            <li><CustomLink href="/week10">Week-X</CustomLink></li>
+            <li><CustomLink href="/week11">Week-XI</CustomLink></li>
           </ul>
         </div>
       </div>
