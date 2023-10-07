@@ -39,7 +39,7 @@ const handleSubmit = (event) => {
   if (!formData.firstName) fillErrors.firstName = 'I need your government name❗';
   if (!formData.lastName) fillErrors.lastName = 'I need your government name❗';
   if (!formData.age) fillErrors.age = 'Stop lying❗';
-  if (!formData.satisfaction) fillErrors.satisfaction = 'This is not a joke';
+  if (!formData.satisfaction) fillErrors.satisfaction = 'This is not a joke❗';
   if (!formData.favoriteCategory) fillErrors.favoriteCategory = 'You must be stupid❗';
 
   setErrors(fillErrors);
