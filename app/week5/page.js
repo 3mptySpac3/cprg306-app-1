@@ -6,13 +6,11 @@ const Page = () => {
   return(
     <main>
       <div>
-        <div>
-        <Navbar />
+        <div className=''>  
         </div>
-        <h1>
-          Shopping ItemList
-        </h1>
+        <div>
         <ItemList />
+        </div>
       </div>
 
     </main>
