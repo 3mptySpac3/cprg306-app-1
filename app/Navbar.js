@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-export default function Navbar() {
+export default function Navbar({}) {
   return (
     <nav className="h-16 ml-4 mr-4 mt-4 p-10 border-2 hover:text-black ">
       <div className="container mx-auto flex justify-center items-center h-full">

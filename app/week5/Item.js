@@ -6,7 +6,7 @@ function Item({name, quantity,category,price}){
       <h4 className="font-bold text-lg">{name}</h4>
       <p>Quantity: {quantity}</p>
       <p>Category: {category}</p>
-      <p>Price: {price}</p>
+      <p>Price: ${price.toFixed(2)}</p>
     </li>
     );
 } 
