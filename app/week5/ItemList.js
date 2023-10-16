@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import Item from '/.Item';
+import React from 'react';
+import Item from './Item';
 import ItemsData from './Data.json';
 
 const ItemList = () =>{ 
-  const [sortBy, setSortBy] = useState('name');
+  const [sortBy, setSortBy] = React.useState('name');
 
   const sortedItems = [...ItemsData.items].sort((a, b) => {
     if (sortBy === 'name') {
