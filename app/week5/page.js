@@ -1,10 +1,22 @@
 import React from 'react';
 import Navbar from '../Navbar';
+import ItemList from './ItemList';
 
-export default function Week5() {
-  return (
-    <div>
-      <Navbar />
-    </div>
-  )
+const Page = () => {
+  return(
+    <main>
+      <div>
+        <div>
+        <Navbar />
+        </div>
+        <h1>
+          Shopping ItemList
+        </h1>
+        <ItemList />
+      </div>
+
+    </main>
+  );
 }
+
+export default Page;

@@ -1,0 +1,221 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Banana, 🍌",
+      "quantity": 10,
+      "category": "Banana",
+      "price": 100.00
+    },
+    {
+      "id": 2,
+      "name": "White Bread, 🍞",
+      "quantity": 10,
+      "category": "Bread",
+      "price": 100.00
+    },
+    {
+      "id": 3,
+      "name": "Bagel, 🥯",
+      "quantity": 55,
+      "category": "Bread",
+      "price": 20.00
+    },
+    {
+      "id": 4,
+      "name": "Donut, 🍩",
+      "quantity": 100,
+      "category": "Bread",
+      "price": 3.00
+    },
+    {
+      "id": 5,
+      "name": "Baguette, 🥖",
+      "quantity": 92,
+      "category": "Bread",
+      "price": 35.00
+    },
+    {
+      "id": 6,
+      "name": "Broccoli, 🥦",
+      "quantity": 10,
+      "category": "Broccoli",
+      "price": 100.00
+    },
+    {
+      "id": 7,
+      "name": "Chicken, 🐤",
+      "quantity": 10,
+      "category": "Chicken",
+      "price": 100.00
+    },
+    {
+      "id": 8,
+      "name": "Chicken Breast, 🍖",
+      "quantity": 55,
+      "category": "Chicken",
+      "price": 20.00
+    },
+    {
+      "id": 9,
+      "name": "Chicken Thigh, 🍗",
+      "quantity": 100,
+      "category": "Chicken",
+      "price": 3.00
+    },
+    {
+      "id": 10,
+      "name": "Dishsoap, 🧼",
+      "quantity": 10,
+      "category": "Dishsoap",
+      "price": 100.00
+    },
+    {
+      "id": 11,
+      "name": "Chicken Eggs, 🐔",
+      "quantity": 10,
+      "category": "Dairy",
+      "price": 100.00
+    },
+    {
+      "id": 12,
+      "name": "Duck Eggs, 🦆",
+      "quantity": 55,
+      "category": "Plant-Based",
+      "price": 20.00
+    },
+    {
+      "id": 13,
+      "name": "Quail Eggs, 🐦",
+      "quantity": 100,
+      "category": "Plant-Based",
+      "price": 3.00
+    },
+    {
+      "id": 14,
+      "name": "Goose Eggs, 🦢",
+      "quantity": 92,
+      "category": "Plant-Based",
+      "price": 35.00
+    },
+    {
+      "id": 15,
+      "name": "Handsoap, 🧼",
+      "quantity": 10,
+      "category": "Handsoap",
+      "price": 100.00
+    },
+    {
+      "id": 16,
+      "name": "Dairy Milk, 🐮",
+      "quantity": 10,
+      "category": "Dairy",
+      "price": 100.00
+    },
+    {
+      "id": 17,
+      "name": "Almond Milk, 🌰",
+      "quantity": 55,
+      "category": "Plant-Based",
+      "price": 20.00
+    },
+    {
+      "id": 18,
+      "name": "Soy Milk, 🌱",
+      "quantity": 100,
+      "category": "Plant-Based",
+      "price": 3.00
+    },
+    {
+      "id": 19,
+      "name": "Coconut Milk, 🥥",
+      "quantity": 92,
+      "category": "Plant-Based",
+      "price": 35.00
+    },
+    {
+      "id": 20,
+      "name": "Paper Towel, 🧻",
+      "quantity": 10,
+      "category": "Paper Towel",
+      "price": 100.00
+    },
+    {
+      "id": 21,
+      "name": "Papyrus, 📜",
+      "quantity": 100,
+      "category": "Paper Towel",
+      "price": 3.00
+    },
+    {
+      "id": 22,
+      "name": "Nature`l, 🌿",
+      "quantity": 92,
+      "category": "Paper Towel",
+      "price": 35.00
+    },
+    {
+      "id": 23,
+      "name": "Tomato Sauce, 🍅",
+      "quantity": 10,
+      "category": "Sauce",
+      "price": 100.00
+    },
+    {
+      "id": 24,
+      "name": "Hot Sauce, 🌶️",
+      "quantity": 55,
+      "category": "Sauce",
+      "price": 20.00
+    },
+    {
+      "id": 25,
+      "name": "Pasta Sauce, 🍝",
+      "quantity": 100,
+      "category": "Sauce",
+      "price": 3.00
+    },
+    {
+      "id": 26,
+      "name": "Pasta, 🍝",
+      "quantity": 10,
+      "category": "Spaghetti",
+      "price": 100.00
+    },
+    {
+      "id": 27,
+      "name": "Ravioli, 🧀",
+      "quantity": 100,
+      "category": "Spaghetti",
+      "price": 3.00
+    },
+    {
+      "id": 28,
+      "name": "Meatballs, 🍖",
+      "quantity": 92,
+      "category": "Spaghetti",
+      "price": 35.00
+    },
+    {
+      "id": 29,
+      "name": "Toilet Paper, 🧻",
+      "quantity": 10,
+      "category": "Toilet Paper",
+      "price": 100.00
+    },
+    {
+      "id": 30,
+      "name": "Papyrus, 📜",
+      "quantity": 100,
+      "category": "Toilet Paper",
+      "price": 3.00
+    },
+    {
+      "id": 31,
+      "name": "Nature`l, 🌿",
+      "quantity": 92,
+      "category": "Toilet Paper",
+      "price": 35.00
+    }
+  ]
+}
