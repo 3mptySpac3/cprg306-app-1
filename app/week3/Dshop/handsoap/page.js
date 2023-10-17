@@ -6,7 +6,7 @@ import HandsoapItems from './handsoapItems';
 
 export default function Handsoap() {
   return(
-    <div>
+    <div className="text-white">
       <ShopTitles>
       <h1>🧼 Handsoap Products</h1>
       </ShopTitles>

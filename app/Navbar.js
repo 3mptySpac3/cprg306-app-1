@@ -5,7 +5,7 @@ import React from 'react';
 
 export default function Navbar({}) {
   return (
-    <nav className="h-16 ml-4 mr-4 mt-4 p-10 border-2 hover:text-black ">
+    <nav className="h-16 ml-4 mr-4 mt-4 p-10 border-2 hover:text-emerald-200 ">
       <div className="container mx-auto flex justify-center items-center h-full">
         <div className=""style= {{fontFamily: "cursive"}}>
           <ul className= "flex space-x-2 hover:">
@@ -29,7 +29,7 @@ export default function Navbar({}) {
 function CustomLink({ href, children, }) {
   return (
     <Link href={href} passHref>
-      <span className="cursor-pointer p-2 my-2 bg-black hover:bg-white hover:text-black transition duration-1000">
+      <span className="cursor-pointer p-2 my-2 bg-white hover:bg-black hover:text-white transition duration-1000">
         {children}
       </span>
     </Link>

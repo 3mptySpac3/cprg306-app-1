@@ -6,7 +6,7 @@ import ToiletPaperItems from './tpItems';
 
 export default function ToiletPaper() {
   return(
-    <div>
+    <div className="text-white">
       <ShopTitles>
       <h1>🧻 Toilet Paper Products</h1>
       </ShopTitles>

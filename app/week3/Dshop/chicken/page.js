@@ -7,7 +7,7 @@ import ChickenItems from './chickenItems';
 
 export default function Chicken() {
   return(
-    <div>
+    <div className="text-white">
       <ShopTitles>
       <h1>🐔 Chicken Products</h1>
       </ShopTitles>

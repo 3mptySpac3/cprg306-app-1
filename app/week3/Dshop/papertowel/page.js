@@ -6,7 +6,7 @@ import PaperTowelItems from './ptItems';
 
 export default function PaperTowel() {
   return(
-    <div>
+    <div className="text-white">
       <ShopTitles>
       <h1>🧻 Paper Towel Products</h1>
       </ShopTitles>

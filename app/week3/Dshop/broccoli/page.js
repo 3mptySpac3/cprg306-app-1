@@ -6,7 +6,7 @@ import BroccoliItems from './broccoliItems';
 
 export default function Broccoli() {
   return(
-    <div>
+    <div className="text-white">
       <ShopTitles>
       <h1>🥦 Broccoli Products</h1>
       </ShopTitles>

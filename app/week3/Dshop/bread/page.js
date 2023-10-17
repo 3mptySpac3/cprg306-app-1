@@ -6,7 +6,7 @@ import BreadItems from './breadItems';
 
 export default function Bread() {
   return(
-    <div>
+    <div className="text-white">
       <ShopTitles>
       <h1>🍞 Bread Products</h1>
       </ShopTitles>

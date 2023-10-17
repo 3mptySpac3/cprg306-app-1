@@ -6,7 +6,7 @@ import BananaItems from './bananaItems';
 
 export default function Banana() {
   return(
-    <div>
+    <div className="text-white">
       <ShopTitles>
       <h1>🍌 Banana Products</h1>
       </ShopTitles>

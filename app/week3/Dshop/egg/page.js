@@ -6,7 +6,7 @@ import EggItems from './eggItems';
 
 export default function Egg() {
   return(
-    <div>
+    <div className="text-white">
       <ShopTitles>
       <h1>🥚 Egg Products</h1>
       </ShopTitles>

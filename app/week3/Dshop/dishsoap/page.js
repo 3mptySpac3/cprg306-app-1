@@ -6,7 +6,7 @@ import DishsoapItems from './dishsoapItems';
 
 export default function Dishsoap() {
   return(
-    <div>
+    <div className="text-white">
       <ShopTitles>
       <h1>🧼 Dishsoap Products</h1>
       </ShopTitles>

@@ -6,7 +6,7 @@ import SauceItems from './sauceItems';
 
 export default function Sauce() {
   return(
-    <div>
+    <div className="text-white">
       <ShopTitles>
       <h1>🥫 Sauce Products</h1>
       </ShopTitles>

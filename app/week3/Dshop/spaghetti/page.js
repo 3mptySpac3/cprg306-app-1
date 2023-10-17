@@ -6,7 +6,7 @@ import SpaghettiItems from './spaghettiItems';
 
 export default function Spaghetti() {
   return(
-    <div>
+    <div className="text-white">
       <ShopTitles>
       <h1>🍝 Spaghetti Products</h1>
       </ShopTitles>

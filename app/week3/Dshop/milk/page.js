@@ -7,7 +7,7 @@ import Back from '/app/comps/backtoshop';
 
 export default function Milk() {
   return(
-    <div>
+    <div className="text-white">
       <ShopTitles>
       <h1>🥛 Milk Products</h1>
       </ShopTitles>
