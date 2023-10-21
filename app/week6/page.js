@@ -8,7 +8,7 @@ import ItemsData from './Data.json';
 
 
 const Page = () => {
-  const [isModalOpen, setModalOpen] = useState(false);
+  const [isModalOpen, setModelOpen] = useState(false);
   const [items, setItems] = useState(ItemsData.items);
   const [newItem, setNewItem] = useState({
     name: '',
@@ -46,7 +46,7 @@ const Page = () => {
         <Link href="/">
           <button className=" text-emerald-100 p-2 ml-8 mb-4 bg-gray-800 rounded text-xl hover:bg-emerald-100 hover:text-gray-800 transition duration-1000">Home</button>
         </Link>
-        <Model isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
+        <Model isOpen={isModalOpen} onClose={() => setModelOpen(false)}>
           <form onSubmit={handleSubmit}>
             <div>
               <label>Item Name:</label>
