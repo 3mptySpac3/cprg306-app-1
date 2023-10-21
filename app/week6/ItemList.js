@@ -2,11 +2,10 @@
 
 import React from 'react';
 import Item from './Item';
-import ItemsData from './Data.json';
 import Model from './Model';
 
 
-const ItemList = () => { 
+const ItemList  = ({items, setItems}) => { 
   const [sortBy, setSortBy] = React.useState('name');
   const [isOpen, setIsOpen] = React.useState(false);
   const [currentItem, setCurrentItem] = React.useState(null);
@@ -21,7 +20,7 @@ const ItemList = () => {
     setCurrentItem(null);
   };
 
-  const sortedItems = [...ItemsData.items].sort((a, b) => {
+  const sortedItems = [...items].sort((a, b) => {
     if (sortBy === 'name') {
       return a.name.localeCompare(b.name);
     } else if (sortBy === 'category') {
