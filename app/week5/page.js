@@ -1,7 +1,5 @@
 import React from 'react';
-import Navbar from '../Navbar';
 import ItemList from './ItemList';
-import HoverNav from '../comps/hoverNav';
 import Link from 'next/link';
 
 const Page = () => {
