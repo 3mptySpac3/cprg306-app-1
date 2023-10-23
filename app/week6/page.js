@@ -37,9 +37,6 @@ const Page = () => {
   return (
     <main className="bg-orange-100">
       <div>
-        <div className=''>  
-          <button onClick={() => setModelOpen(true)}>Add Item</button>
-        </div>
         <div>
           <ItemList items={items} setItems={setItems} />
         </div>
@@ -73,11 +70,16 @@ const Page = () => {
                 <option value="Nuts">Snacks</option>
                 <option value="Drinks">Bevies</option>
                 <option value="Other">Other</option>
+                <option value="Toilet Paper">Toilet Paper</option>
+                <option value="Bread">Bread</option>
               </select>
             </div>
             <button type="submit">Add</button>
           </form>
         </Model>
+        <div className=' text-emerald-100 p-2 bg-gray-800 rounded text-xl justify-center flex hover:bg-emerald-100 hover:text-gray-800 transition duration-1000'>  
+          <button onClick={() => setModelOpen(true)}>Add Item</button>
+        </div>
       </div>
     </main>
   );
