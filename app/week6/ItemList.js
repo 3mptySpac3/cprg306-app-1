@@ -3,7 +3,6 @@
 import React from 'react';
 import Item from './Item';
 import Model from './Model';
-import page from './page';
 
 
 const ItemList  = ({items, setItems}) => { 
