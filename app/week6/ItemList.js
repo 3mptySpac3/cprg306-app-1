@@ -3,6 +3,7 @@
 import React from 'react';
 import Item from './Item';
 import Model from './Model';
+import ImageMap from './ImageMap';
 
 
 const ItemList  = ({items, setItems}) => { 

@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageMap from './ImageMap';
 
 const Model = ({isOpen, onClose, children, image}) => {
   if (!isOpen) return null;

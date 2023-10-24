@@ -1,3 +1,4 @@
+import ImageMap from './ImageMap.js';
 
 function Item({name, quantity,category,price,onClick}){
   return(

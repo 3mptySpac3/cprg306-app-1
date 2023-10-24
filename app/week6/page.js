@@ -5,6 +5,7 @@ import Model from './Model';
 import ItemList from './ItemList';
 import Link from 'next/link';
 import ItemsData from './Data.json';
+import ImageMap from './ImageMap';
 
 
 const Page = () => {
@@ -28,8 +29,9 @@ const Page = () => {
 
     const newItemWithId = {
       id: Math.max(...items.map(i => i.id)) + 1,
-      ...newItem
-  };
+      ...newItem,
+      image: ImageMap[newItem.category] || "/f6ba70936b5dadbaf5b40610ca88ec2b.jpg"
+    };
 
   setItems(prevItems => [...prevItems, newItemWithId]);
   setNewItem({
@@ -77,11 +79,12 @@ const Page = () => {
                 <option value="Meat">Meat</option>
                 <option value="Dairy">Dairy</option>
                 <option value="Grains">Grains</option>
-                <option value="Nuts">Snacks</option>
+                <option value="Nuts">Nuts</option>
                 <option value="Drinks">Bevies</option>
-                <option value="Other">Other</option>
                 <option value="Toilet Paper">Toilet Paper</option>
                 <option value="Bread">Bread</option>
+                <option value="Snacks">Snacks</option>
+                <option value="Other">Other</option>
               </select>
             </div>
             <button type="submit" className="bg-gray-900 text-white p-2 mb-4 rounded text-xs w-full hover:bg-emerald-100 hover:text-gray-800 transition duration-1000 mt-4" >+</button>
