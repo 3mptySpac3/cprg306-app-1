@@ -3,6 +3,7 @@
 import React from 'react';
 import Item from './Item';
 import Model from './Model';
+import page from './page';
 
 
 const ItemList  = ({items, setItems}) => { 
@@ -64,7 +65,7 @@ const ItemList  = ({items, setItems}) => {
           
         ))}
       </ul>
-      <Model isOpen={isOpen} onClose={handleClose} item={currentItem}/>
+      <Model isOpen={isOpen} onClose={handleClose} item={currentItem} image={currentItem?.image}/>
     </div>
     </div>
   );

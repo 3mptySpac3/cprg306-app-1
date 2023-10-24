@@ -17,6 +17,7 @@ const Page = () => {
     price: ''
   });
 
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setNewItem(prevState => ({ ...prevState, [name]: value }));
@@ -31,6 +32,12 @@ const Page = () => {
   };
 
   setItems(prevItems => [...prevItems, newItemWithId]);
+  setNewItem({
+    name: '',
+    quantity: '',
+    category: '',
+    price: ''
+  });
   setModelOpen(false);
 }
 
@@ -40,27 +47,30 @@ const Page = () => {
         <div>
           <ItemList items={items} setItems={setItems} />
         </div>
+        {/* <div className=' text-emerald-100 p-2 bg-gray-800 rounded text-xl justify-center flex hover:bg-emerald-100 hover:text-gray-800 transition duration-1000'>  
+          <button onClick={() => setModelOpen(true)}>Add Item</button>
+        </div> */}
         <Link href="/">
-          <button className=" text-emerald-100 p-2 ml-8 mb-4 bg-gray-800 rounded text-xl hover:bg-emerald-100 hover:text-gray-800 transition duration-1000">Home</button>
+          <button className=" text-emerald-100 mt-4 p-2 ml-8 mb-4 bg-gray-800 rounded text-xl hover:bg-emerald-100 hover:text-gray-800 transition duration-1000">&lt;</button>
         </Link>
         <Model isOpen={isModalOpen} onClose={() => setModelOpen(false)}>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} style = {{fontFamily: "cursive"}}>
             <div>
-              <label>Item Name:</label>
-              <input type="text" name="name" value={newItem.name} onChange={handleInputChange} />
+              <label className=""  >Item Name:</label>
+              <input type="text" name="name" value={newItem.name} onChange={handleInputChange} className=" border border-black w-full" />
             </div>
             <div>
               <label>Item Quantity:</label>
-              <input type="number" name="quantity" value={newItem.quantity} onChange={handleInputChange} />
+              <input type="number" name="quantity" value={newItem.quantity} onChange={handleInputChange} className=" border border-black w-full" />
             </div>
             <div>
               <label>Price:</label>
-              <input type="number" name="price" value={newItem.price} onChange={handleInputChange} />
+              <input type="number" name="price" value={newItem.price} onChange={handleInputChange} className=" border border-black w-full"/>
             </div>
             <div>
-              {/* <label>Category:</label> */}
+              <label>Category</label>
               <select name="category" value={newItem.category} onChange={handleInputChange}
-              className="w-full p-2 border rounded mt-1 text-black">
+              className="w-full p-2 border border-black mt-1 text-black">
                 <option value="" disabled>Select a category</option>
                 <option value="Fruits">Fruits</option>
                 <option value="Vegetables">Vegetables</option>
@@ -74,10 +84,10 @@ const Page = () => {
                 <option value="Bread">Bread</option>
               </select>
             </div>
-            <button type="submit">Add</button>
+            <button type="submit" className="bg-gray-900 text-white p-2 mb-4 rounded text-xs w-full hover:bg-emerald-100 hover:text-gray-800 transition duration-1000 mt-4" >+</button>
           </form>
         </Model>
-        <div className=' text-emerald-100 p-2 bg-gray-800 rounded text-xl justify-center flex hover:bg-emerald-100 hover:text-gray-800 transition duration-1000'>  
+         <div className=' text-emerald-100 p-2 bg-gray-800 rounded text-xl justify-center flex hover:bg-emerald-100 hover:text-gray-800 transition duration-1000'>  
           <button onClick={() => setModelOpen(true)}>Add Item</button>
         </div>
       </div>

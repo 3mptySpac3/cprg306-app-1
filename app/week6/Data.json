@@ -5,14 +5,16 @@
       "name": "Banana, 🍌",
       "quantity": 10,
       "category": "Banana",
-      "price": 100.00
+      "price": 100.00,
+      "image": "/BigEye.jpe"
     },
     {
       "id": 2,
       "name": "White Bread, 🍞",
       "quantity": 10,
       "category": "Bread",
-      "price": 100.00
+      "price": 100.00,
+      "image": "/6y.jpg"
     },
     {
       "id": 3,
@@ -117,7 +119,8 @@
       "name": "Almond Milk, 🌰",
       "quantity": 55,
       "category": "Plant-Based",
-      "price": 20.00
+      "price": 20.00,
+      "image": "/6y.jpg"
     },
     {
       "id": 18,
