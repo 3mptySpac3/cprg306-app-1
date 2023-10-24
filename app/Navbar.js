@@ -9,6 +9,7 @@ export default function Navbar({}) {
       <div className="container mx-auto flex justify-center items-center h-full">
         <div className=""style= {{fontFamily: "cursive"}}>
           <ul className= "flex space-x-2 hover:">
+            <li><CustomLink href="/home"></CustomLink></li>
             <li><CustomLink href="/">Home</CustomLink></li>
             <li><CustomLink href="/week2">Week-II</CustomLink></li>
             <li><CustomLink href="/week3">Week-III</CustomLink></li>
