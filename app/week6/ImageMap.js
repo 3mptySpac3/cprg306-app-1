@@ -5,7 +5,7 @@ const ImageMap = {
   "Vegetable": "/595882.jpg",
   "Meat": "/596711.jpg",
   "Dairy": "/eggs.png",
-  "Grain": "/smiles.jpg",
+  "Grains": "/smiles.jpg",
   "Nuts": "/wallpaperflare.com_wallpaper.jpg",
   "Bevies": "/xrrf7.jpg",
   "Toilet Paper": "/nhfty.jpg",
