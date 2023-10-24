@@ -21,35 +21,40 @@
       "name": "Bagel, 🥯",
       "quantity": 55,
       "category": "Bread",
-      "price": 20.00
+      "price": 20.00,
+      "image": "/2dl2d3o.jpg"
     },
     {
       "id": 4,
       "name": "Donut, 🍩",
       "quantity": 100,
       "category": "Bread",
-      "price": 3.00
+      "price": 3.00,
+      "image": "/2do32d2o.jpg"
     },
     {
       "id": 5,
       "name": "Baguette, 🥖",
       "quantity": 92,
       "category": "Bread",
-      "price": 35.00
+      "price": 35.00,
+      "image": "/5tgf.jpg"
     },
     {
       "id": 6,
       "name": "Broccoli, 🥦",
       "quantity": 10,
       "category": "Broccoli",
-      "price": 100.00
+      "price": 100.00,
+      "image": "/6yg56t.jpg"
     },
     {
       "id": 7,
       "name": "Chicken, 🐤",
       "quantity": 10,
       "category": "Chicken",
-      "price": 100.00
+      "price": 100.00,
+      "image": "/93jd32.jpg"
     },
     {
       "id": 8,
@@ -77,7 +82,8 @@
       "name": "Chicken Eggs, 🐔",
       "quantity": 10,
       "category": "Dairy",
-      "price": 100.00
+      "price": 100.00,
+      "image": "/595865.jpg"
     },
     {
       "id": 12,
