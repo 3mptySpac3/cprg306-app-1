@@ -37,7 +37,7 @@ function HomePage() {
     <DndProvider backend={HTML5Backend}>
       <div className="bg-white">
         <DroppableArea>
-          <WeekCard className="border-4 "week="1" image="/595879.png" />
+          <WeekCard className="border rounded-lg "week="1" image="/595879.png" />
           <WeekCard week="2" image="/595865.jpg" />
           <WeekCard week="3" image="/595864.jpg" />
           <WeekCard week="4" image="/595881.png" />
