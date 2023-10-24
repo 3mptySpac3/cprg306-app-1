@@ -17,12 +17,16 @@ function WeekCard({ week, image }) {
     }),
   });
 
+  const imageStyle = week === "1" ? { filter: "grayscale(100%)" } : {}; 
+
   return (
-    <div ref={drag} style={{ opacity: isDragging ? 0.5 : 1 }} className="shadow-lg rounded-xl p-4">
-      <img src={image} alt={`Week ${week} Image`} className="max-w-md max-h-md mx-auto" />
+    <div ref={drag} style={{ opacity: isDragging ? 0.5 : 1 }} className="shadow-lg rounded-xl p-4 w-1/4 h-1/4">
+      <img src={image} alt={`Week ${week} Image`} style={imageStyle} className="object-cover" />
       <p className="text-center mt-2">Week {week}</p>
     </div>
   );
 }
+
+
 
 export default WeekCard;
