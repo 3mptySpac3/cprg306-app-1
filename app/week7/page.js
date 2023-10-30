@@ -1,3 +1,5 @@
+///93jd32.jpg Default image
+
 "use client"
 
 import React, { useState, useEffect } from 'react';
@@ -6,6 +8,10 @@ import ItemsData from './Data.json';
 import Model from './ModelWeek7'
 import Item from './Item';
 import ImageMap from './ImageMap';
+import fetchRandomImage from './RandomImg';
+
+const { NekosAPI } = require("nekosapi");
+const nekos = new NekosAPI();
 
 const Page = () => {
   const [items, setItems] = useState(ItemsData.items);
@@ -31,42 +37,15 @@ const Page = () => {
     };
   
     updateItemsWithDefaultImage();
-  }, []);
+  }, []) ;
 
+  
 
-
-  // const handleItemClick = async (item) => {
-  //   try {
-  //     const response = await fetch('https://pic.re/image');
-  //     const data = await response.json();
-  //     const updatedItem = { ...item, image: data.url }; // Update item with new image
-  //     setCurrentItem(updatedItem);
-  //   } catch (error) {
-  //     console.error('Error fetching image:', error);
-  //     setCurrentItem({ ...item, image: '/default-image.jpg' }); // Fallback image in case of error
-  //   }
-  //   setIsOpen(true);
-  // };
-
-  // const handleItemClick = (item) => {
-  //   setCurrentItem(item);
-  //   setIsOpen(true);
-  // };
-
-  const handleItemClick = async (item) => {
-    try {
-      // Fetch image based on the item's category or any unique identifier
-      const response = await fetch(`https://pic.re/image?category=${item.category}`);
-      const imageUrl = `https://pic.re/image?category=${item.category}&_=${new Date().getTime()}`;
-      const data = await response.json();
-      const updatedItem = { ...item, image: data.url }; // Update item with new image
-      setCurrentItem(updatedItem);
-    } catch (error) {
-      console.error('Error fetching image:', error);
-      setCurrentItem({ ...item, image: '/9222ddkk.jpg' }); // Fallback image in case of error
-    }
+  const handleItemClick = (item) => {
+    setCurrentItem(item);
     setIsOpen(true);
   };
+
 
   const handleClose = () => {
     setIsOpen(false);
