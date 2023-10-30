@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import ItemsData from '../week6/Data.json';
+import ItemsData from './Data.json';
 import Model from './ModelWeek7'
 import Item from './Item';
 import ImageMap from './ImageMap';
@@ -13,6 +13,7 @@ const Page = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentItem, setCurrentItem] = useState(null);
   const [isModelOpen, setModalOpen] = useState(false);
+  // const imageUrl = `https://pic.re/image?category=${item.category}&_=${new Date().getTime()}`;
   const [newItem, setNewItem] = useState({
     name: '',
     quantity: '',
@@ -21,26 +22,49 @@ const Page = () => {
   });
 
   useEffect(() => {
-    const fetchImagesAndUpdateItems = async () => {
-      const updatedItems = await Promise.all(ItemsData.items.map(async (item) => {
-        try {
-          const response = await fetch('https://pic.re/image');
-          const data = await response.json();
-          return { ...item, image: data.url }; // Assign the fetched image URL
-        } catch (error) {
-          console.error('Error fetching image:', error);
-          return { ...item, image: '/9222ddkk.jpg' }; // Fallback image in case of error
-        }
+    const updateItemsWithDefaultImage = () => {
+      const updatedItems = ItemsData.items.map(item => ({
+        ...item,
+        image: 'https://pic.re/image' // Directly assign the API URL
       }));
       setItems(updatedItems);
     };
-
-    fetchImagesAndUpdateItems();
+  
+    updateItemsWithDefaultImage();
   }, []);
 
 
-  const handleItemClick = (item) => {
-    setCurrentItem(item);
+
+  // const handleItemClick = async (item) => {
+  //   try {
+  //     const response = await fetch('https://pic.re/image');
+  //     const data = await response.json();
+  //     const updatedItem = { ...item, image: data.url }; // Update item with new image
+  //     setCurrentItem(updatedItem);
+  //   } catch (error) {
+  //     console.error('Error fetching image:', error);
+  //     setCurrentItem({ ...item, image: '/default-image.jpg' }); // Fallback image in case of error
+  //   }
+  //   setIsOpen(true);
+  // };
+
+  // const handleItemClick = (item) => {
+  //   setCurrentItem(item);
+  //   setIsOpen(true);
+  // };
+
+  const handleItemClick = async (item) => {
+    try {
+      // Fetch image based on the item's category or any unique identifier
+      const response = await fetch(`https://pic.re/image?category=${item.category}`);
+      const imageUrl = `https://pic.re/image?category=${item.category}&_=${new Date().getTime()}`;
+      const data = await response.json();
+      const updatedItem = { ...item, image: data.url }; // Update item with new image
+      setCurrentItem(updatedItem);
+    } catch (error) {
+      console.error('Error fetching image:', error);
+      setCurrentItem({ ...item, image: '/9222ddkk.jpg' }); // Fallback image in case of error
+    }
     setIsOpen(true);
   };
 
@@ -64,11 +88,14 @@ const Page = () => {
     setNewItem(prevState => ({ ...prevState, [name]: value }));
   };
 
+
   async function handleSubmit (e) {
     e.preventDefault();
 
      // Fetch a random anime image from the API
-    //  let imageUrl = ImageMap[newItem.category] || "https://pic.re/image";
+    let imageUrl = ImageMap[newItem.category] || "https://pic.re/image";
+
+
      try {
        const response = await fetch('https://pic.re/image');
        const data = await response.json();
@@ -81,12 +108,7 @@ const Page = () => {
       ...newItem,
       image: imageUrl
     };
-    // const newItemWithId = {
-    //   id: Math.max(...items.map(i => i.id)) + 1,
-    //   ...newItem,
-    //   image: ImageMap[newItem.category] || "/f6ba70936b5dadbaf5b40610ca88ec2b.jpg"
-    // };
-
+    
     setItems(prevItems => [...prevItems, newItemWithId]);
     setNewItem({
       name: '',
