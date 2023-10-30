@@ -1,16 +1,16 @@
 
 const ImageMap = {
-  "Fruit": "/1042906.jpg",
-  "Vegetable": "/595882.jpg",
-  "Meat": "/596711.jpg",
-  "Dairy": "/eggs.png",
-  "Grains": "/smiles.jpg",
-  "Nuts": "/wallpaperflare.com_wallpaper.jpg",
-  "Bevies": "/xrrf7.jpg",
-  "Toilet Paper": "/nhfty.jpg",
-  "Bread": "/drrty.jpg",
-  "Snacks": "/1044320.jpg",
-  "Other": "/593278.jpg"
+  "Fruit": "https://pic.re/image",
+  "Vegetable": "https://pic.re/image",
+  "Meat": "https://pic.re/image",
+  "Dairy": "https://pic.re/image",
+  "Grains": "https://pic.re/image",
+  "Nuts": "https://pic.re/image",
+  "Bevies": "https://pic.re/image",
+  "Toilet Paper": "https://pic.re/image",
+  "Bread": "https://pic.re/image",
+  "Snacks": "https://pic.re/image",
+  "Other": "https://pic.re/image"
 };
 
 export default ImageMap;

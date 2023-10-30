@@ -1,5 +1,3 @@
-
-
 // week7/Model.js
 import React from 'react';
 

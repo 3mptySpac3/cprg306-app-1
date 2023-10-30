@@ -1,9 +1,9 @@
 "use client"
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import ItemsData from '../week6/Data.json';
-import Model from '../week6/Model';
+import Model from './ModelWeek7'
 import Item from './Item';
 import ImageMap from './ImageMap';
 
@@ -12,13 +12,32 @@ const Page = () => {
   const [sortBy, setSortBy] = useState('name');
   const [isOpen, setIsOpen] = useState(false);
   const [currentItem, setCurrentItem] = useState(null);
-  const [isModalOpen, setModelOpen] = useState(false);
+  const [isModelOpen, setModalOpen] = useState(false);
   const [newItem, setNewItem] = useState({
     name: '',
     quantity: '',
     category: '',
     price: ''
   });
+
+  useEffect(() => {
+    const fetchImagesAndUpdateItems = async () => {
+      const updatedItems = await Promise.all(ItemsData.items.map(async (item) => {
+        try {
+          const response = await fetch('https://pic.re/image');
+          const data = await response.json();
+          return { ...item, image: data.url }; // Assign the fetched image URL
+        } catch (error) {
+          console.error('Error fetching image:', error);
+          return { ...item, image: '/9222ddkk.jpg' }; // Fallback image in case of error
+        }
+      }));
+      setItems(updatedItems);
+    };
+
+    fetchImagesAndUpdateItems();
+  }, []);
+
 
   const handleItemClick = (item) => {
     setCurrentItem(item);
@@ -45,13 +64,28 @@ const Page = () => {
     setNewItem(prevState => ({ ...prevState, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  async function handleSubmit (e) {
     e.preventDefault();
+
+     // Fetch a random anime image from the API
+    //  let imageUrl = ImageMap[newItem.category] || "https://pic.re/image";
+     try {
+       const response = await fetch('https://pic.re/image');
+       const data = await response.json();
+       imageUrl = data.url; // Update imageUrl with the API response
+     } catch (error) {
+       console.error('Error fetching image:', error);
+     }
     const newItemWithId = {
       id: Math.max(...items.map(i => i.id)) + 1,
       ...newItem,
-      image: ImageMap[newItem.category] || "/f6ba70936b5dadbaf5b40610ca88ec2b.jpg"
+      image: imageUrl
     };
+    // const newItemWithId = {
+    //   id: Math.max(...items.map(i => i.id)) + 1,
+    //   ...newItem,
+    //   image: ImageMap[newItem.category] || "/f6ba70936b5dadbaf5b40610ca88ec2b.jpg"
+    // };
 
     setItems(prevItems => [...prevItems, newItemWithId]);
     setNewItem({
@@ -91,7 +125,7 @@ return (
       <Link href="/">
         <button className=" text-emerald-100 mt-4 p-2 ml-8 mb-4 bg-gray-800 rounded text-xl hover:bg-emerald-100 hover:text-gray-800 transition duration-1000">&lt;</button>
       </Link>
-      <Model isOpen={isModalOpen} onClose={() => setModelOpen(false)}>
+      <Model isOpen={isModelOpen} onClose={() => setModelOpen(false)}>
           <form onSubmit={handleSubmit} style = {{fontFamily: "cursive"}}>
             <div>
               <label className=""  >Item Name:</label>
@@ -127,7 +161,7 @@ return (
           </form>
         </Model>
       <div className=' text-emerald-100 p-2 bg-gray-800 rounded text-xl justify-center flex hover:bg-emerald-100 hover:text-gray-800 transition duration-1000'>  
-          <button onClick={() => setModelOpen(true)}>Add Item</button>
+          <button onClick={() => setModalOpen(true)}>Add Item</button>
       </div>
     </main>
   );
