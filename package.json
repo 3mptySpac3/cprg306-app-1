@@ -11,9 +11,11 @@
   "dependencies": {
     "autoprefixer": "10.4.15",
     "cors": "^2.8.5",
+    "encoding": "^0.1.13",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "express": "^4.18.2",
+    "firebase": "^10.5.2",
     "nekosapi": "^0.4.3",
     "next": "13.4.19",
     "node-fetch": "^2.7.0",

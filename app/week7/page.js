@@ -13,7 +13,7 @@ import fetchRandomImage from './RandomImg';
 const { NekosAPI } = require("nekosapi");
 const nekos = new NekosAPI();
 
-const Page = () => {
+const Page7 = () => {
   const [items, setItems] = useState(ItemsData.items);
   const [sortBy, setSortBy] = useState('name');
   const [isOpen, setIsOpen] = useState(false);
@@ -168,4 +168,4 @@ return (
   );
 }
 
-export default Page;
+export default Page7;
