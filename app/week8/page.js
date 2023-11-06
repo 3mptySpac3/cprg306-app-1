@@ -3,7 +3,7 @@ import Page7 from '../week7/page';
 import { useUserAuth } from './auth-context';
 import React, { useState, useEffect } from "react";
 
-
+//fixing vercel error
 const Page8 =() => {
 
   const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
