@@ -4,7 +4,7 @@ import { useUserAuth } from './auth-context';
 import React, { useState, useEffect } from "react";
 
 
-const page8 =() => {
+const Page8 =() => {
 
   const { user, gitHubSignIn, firebaseSignOut } = useUserAuth();
   const [isSignedIn, setIsSignedIn] = useState(false);
@@ -58,4 +58,4 @@ const page8 =() => {
 
 }
 
-export default page8;
+export default Page8;
