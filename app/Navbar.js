@@ -10,7 +10,7 @@ export default function Navbar({}) {
         <div className=""style= {{fontFamily: "cursive"}}>
           <ul className= "flex space-x-2 hover:">
             {/* <li><CustomLink href="/home"></CustomLink></li> */}
-            <li><CustomLink href="/">Home</CustomLink></li>
+            <li><CustomLink href="/">Week-I</CustomLink></li>
             <li><CustomLink href="/week2">Week-II</CustomLink></li>
             <li><CustomLink href="/week3">Week-III</CustomLink></li>
             <li><CustomLink href="/week4">Week-IV</CustomLink></li>
@@ -19,7 +19,7 @@ export default function Navbar({}) {
             <li><CustomLink href="/week7">Week-VII</CustomLink></li>
             <li><CustomLink href="/week8">Week-VIII</CustomLink></li>
             <li><CustomLink href="/week10">Week-X</CustomLink></li>
-            <li><CustomLink href="/week11">Week-XI</CustomLink></li>
+            <li><CustomLink href="/week11">Week-XI</CustomLink></li> 
           </ul>
         </div>
       </div>
