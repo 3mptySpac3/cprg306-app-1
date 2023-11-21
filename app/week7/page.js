@@ -32,6 +32,11 @@ const Page7 = () => {
     price: ''
   });
 
+      // Outside of your handleSubmit
+      useEffect(() => {
+        console.log('Items state updated:', items); // Log to verify rerender
+      }, [items]);
+
   useEffect(() => {
     const updateItemsWithDefaultImage = () => {
       const updatedItems = ItemsData.items.map(item => ({
@@ -39,6 +44,7 @@ const Page7 = () => {
         image: 'https://pic.re/image' // Directly assign the API URL
       }));
       setItems(updatedItems);
+      console.log("Items updated with image.");
     };
   
     updateItemsWithDefaultImage();
@@ -98,33 +104,45 @@ const Page7 = () => {
      } catch (error) {
        console.error('Error fetching image:', error);
      }
-    const newItemWithId = {
-      id: Math.max(...items.map(i => i.id)) + 1,
-      ...newItem,
-      image: imageUrl
-    };
-///update here -->
-    if (user) {
-      try {
-        // Use addItem from your services to add to Firestore
-        const addedItem = await addItem(user.uid, newItemWithImage);
-        // Update local state to reflect the new item list
-        setItems(prevItems => [...prevItems, addedItem]);
-      } catch (error) {
-        console.error('Error adding item:', error);
-      }
-    }
+    // const newItemWithId = {
+    //   id: Math.max(...items.map(i => i.id)) + 1,
+    //   ...newItem,
+    //   image: imageUrl
+    // };
 
+    // const newItemWithImage = {
+    //   ...newItem,
+    //   image: imageUrl
+    // };
+
+    // if (user) {
+    //   try {
+    //     await addItem(user.uid, newItemWithImage); // Add to Firestore
+    //     const updatedItems = await getItems(user.uid); // Fetch updated items list
+    //     setItems(updatedItems);
+    //     console.log('Items after adding:', updatedItems); // Log to verify the items
+    //   } catch (error) {
+    //     console.error('Error adding item:', error);
+    //   }
+    // } else {
+    //   console.error('No authenticated user found!');
+    // }
     
-    setItems(prevItems => [...prevItems, newItemWithId]);
-    setNewItem({
-      name: '',
-      quantity: '',
-      category: '',
-      price: ''
-    });
-    setModalOpen(false);
-  };
+    
+  //   setItems(prevItems => [...prevItems, newItemWithId]);
+  //   setNewItem({
+  //     name: '',
+  //     quantity: '',
+  //     category: '',
+  //     price: ''
+  //   });
+  //   setModalOpen(false);
+  // };
+
+  setItems(prevItems => [...prevItems]);
+  setNewItem({ name: '', quantity: '', category: '', price: '' });
+  setModalOpen(false);
+};
 
 
 return (
