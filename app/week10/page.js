@@ -3,7 +3,8 @@ import Page7 from '../week7/page';
 import { useUserAuth } from './auth-context';
 import React, { useState, useEffect } from "react";
 import Link from 'next/link';
-
+import { db } from './firebase'; 
+import { collection, getDocs, addDoc, updateDoc, doc } from  "firebase/firestore";
 //fixing vercel error
 const Page8 =() => {
 
@@ -47,6 +48,7 @@ const Page8 =() => {
   );
   } else {
     return (
+      <UserContext.Provider value={user}>
       <div className="bg-[#FFF8E7] min-h-screen flex justify-center items-center">
       <div>
       <Link href="/">
@@ -58,6 +60,7 @@ const Page8 =() => {
           <button onClick={handleSignInWithGithub} className="w-full bg-[#333] text-white py-2 rounded-md hover:bg-[#444] transition-colors">Sign In with GitHub</button>
         </div>
       </div>
+      </UserContext.Provider>
     );
 
 };

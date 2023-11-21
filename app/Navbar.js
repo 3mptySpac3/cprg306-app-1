@@ -19,7 +19,7 @@ export default function Navbar({}) {
             <li><CustomLink href="/week7">Week-VII</CustomLink></li>
             <li><CustomLink href="/week8">Week-VIII</CustomLink></li>
             <li><CustomLink href="/week10">Week-X</CustomLink></li> 
-            <li><CustomLink href="/week10/test10">Test10</CustomLink></li>
+            {/*<li><CustomLink href="/week10/test10">Test10</CustomLink></li>*
            {/* <li><CustomLink href="/week11">Week-XI</CustomLink></li> */}
           </ul>
         </div>

@@ -3,6 +3,7 @@ import Page7 from '../week7/page';
 import { useUserAuth } from './auth-context';
 import React, { useState, useEffect } from "react";
 import Link from 'next/link';
+import UserContext from '../week7/UserContext';
 
 //fixing vercel error
 const Page8 =() => {
